@@ -1,0 +1,59 @@
+crawler:
+  base_url: "https://filmpalast.to"
+  max_pages: "auto"
+  request_delay: 1.5
+  timeout: 30
+  retry_times: 3
+  max_concurrent: 5
+  user_agent_rotation: true
+  device: "pc"
+
+database:
+  path: "./data/database.db"
+  backup_enabled: true
+  backup_interval: 86400
+  backup_count: 7
+
+export:
+  directory: "./exports"
+  keep_days: 30
+  archive_enabled: true
+  compression: "zip"
+  csv:
+    encoding: "utf-8"
+    delimiter: ","
+    quotechar: '"'
+    quoting: "minimal"
+
+year_filter:
+  start_year: 1945
+  end_year: 2026
+  descending: true
+  stop_on_empty: true
+
+tv_series:
+  enabled: true
+  limit: null
+  batch_size: 100
+  episode_patterns:
+    - "-s\\d+e\\d+"
+    - "-\\d+x\\d+"
+    - "-season-\\d+-episode-\\d+"
+
+logging:
+  level: "INFO"
+  file: "./logs/crawler.log"
+  max_size_mb: 100
+  backup_count: 5
+
+performance:
+  memory_limit_mb: 1024
+  batch_commit_size: 50
+  cache_enabled: true
+  cache_ttl: 3600
+
+monitoring:
+  enabled: true
+  progress_interval: 60
+  health_check: true
+  alert_threshold: 10

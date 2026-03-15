@@ -1,0 +1,46 @@
+# 爬虫配置
+spider:
+  base_url: "https://www.mjwu.cc"
+  # iPhone 17 UA (iOS 18)
+  iphone_ua: "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"
+  # PC UA
+  pc_ua: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  delay_range: [0.1, 0.5]           # 请求延迟范围（秒）
+  max_retries: 3                # 最大重试次数
+  timeout: 15                   # 请求超时（秒）
+  concurrent_requests: 20       # 并发数（建议保持1，避免被封）
+
+# 数据库配置
+database:
+  path: "spider.db"
+
+# 爬取范围配置
+crawl:
+  movie:
+    enabled: true
+    content_type: "dianying"    # 电影分类
+    year_start: 1945            # 开始年份
+    year_end: 2026              # 结束年份
+    max_pages: null             # null=不限制
+    fetch_rating: true          # 是否获取评分
+  tv:
+    enabled: true
+    content_type: "meiju"       # 美剧分类
+    year_start: 1945
+    year_end: 2026
+    max_pages: null
+    max_episodes: null          # 每部剧最大集数限制（null=不限制）
+
+# 导出配置
+export:
+  output_dir: "./data/exports"
+  encoding: "utf-8-sig"
+  delimiter: ","
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "./data/logs/spider.log"
+  max_bytes: 10485760           # 10MB
+  backup_count: 5

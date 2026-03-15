@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  crawler:
+    build: .
+    container_name: filmpalast-crawler
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./exports:/app/exports
+      # 如果需要开发调试，可以挂载代码目录
+      # - ./src:/app/src
+      # - ./config:/app/config
+    environment:
+      - TZ=Europe/Berlin
+      - RUN_ON_START=true  # 容器启动时是否立即运行一次增量更新
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1024M

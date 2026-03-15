@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  crawler:
+    build: .
+    image: topflix-crawler
+    container_name: topflix-crawler
+    restart: unless-stopped
+    volumes:
+      - ./exports:/app/exports
+      - ./data:/app/data
+    environment:
+      - TZ=UTC

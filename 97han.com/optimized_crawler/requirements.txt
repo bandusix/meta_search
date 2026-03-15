@@ -1,0 +1,16 @@
+# 项目依赖
+aiohttp>=3.8.0
+lxml>=4.9.0
+aiofiles>=0.8.0
+asyncio
+datetime
+logging
+sqlite3
+re
+json
+os
+sys
+argparse
+contextlib
+urllib.parse
+concurrent.futures
