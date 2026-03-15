@@ -9,12 +9,12 @@ The following spider projects are included in this collection:
 ### 1919ys.com_zh
 Spider for `1919ys.com` (Chinese).
 - **Key Files**: `spider.py`, `main.py`, `incremental.py`
-- **Docs**: `vs_movie_spider_research_report_v3.md`
+- **Docs**: `vs_movie_spider_research_report_v3_en.md`
 
 ### 97han.com
 Comprehensive spider for `97han.com` with enhanced logging and optimization.
 - **Key Files**: `optimized_crawler/main_crawler.py`, `spiders/enhanced_movie_spider.py`
-- **Docs**: `97han.com爬虫技术文档.md`, `README_ENHANCED.md`
+- **Docs**: `97han_com_spider_technical_doc.md`, `README_ENHANCED.md`
 
 ### cuevana3
 Scraper for `cuevana3` (Spanish/Latin).
@@ -29,12 +29,12 @@ Crawler for `filmpalast.to` (German).
 ### jzftdz.com
 Spider for `jzftdz.com`.
 - **Key Files**: `jzftdz_scraper/main.py`, `core/base_spider.py`
-- **Docs**: `jzftdz_scraper_v3_final.md`
+- **Docs**: `jzftdz_scraper_v3_final_doc.md`
 
 ### kcechiba.com
 Spider for `kcechiba.com` (Chinese).
 - **Key Files**: `main.py`, `spiders/movie_spider.py`
-- **Docs**: `kcechiba_com_策驰影院_爬虫技术文档.md`
+- **Docs**: `kcechiba_com_spider_technical_doc.md`
 
 ### lk21official
 Scraper for `lk21official` (Indonesian).
@@ -44,12 +44,12 @@ Scraper for `lk21official` (Indonesian).
 ### movie.uishishuo11.com
 Spider for `movie.uishishuo11.com` (Chinese).
 - **Key Files**: `main.py`, `spiders/movie_spider.py`
-- **Docs**: `神马午夜电影网爬虫技术文档_最终版.md`
+- **Docs**: `shenma_midnight_movie_spider_technical_doc_final.md`
 
 ### pelicinehd
 Scraper for `pelicinehd`.
 - **Key Files**: `main.py`, `movie_scraper.py`
-- **Docs**: `TECHNICAL_IMPLEMENTATION_GUIDE.md`
+- **Docs**: `TECHNICAL_IMPLEMENTATION_GUIDE.md`, `pelicinehd_website_structure_analysis.md`
 
 ### repelishd
 Scraper for `repelishd`.
@@ -64,12 +64,16 @@ Crawler for `topflix.online`.
 ### www.mjwu.cc
 Spider for `www.mjwu.cc` (Chinese - Meijuwu).
 - **Key Files**: `mjwu_spider/main.py`
-- **Docs**: `mjwu_cc_美剧屋_爬虫技术文档.md`
+- **Docs**: `mjwu_cc_spider_technical_doc.md`
 
 ### www.xz8.cc_zh
 Spider for `www.xz8.cc`.
 - **Key Files**: `xz8_spider.py`
 - **Docs**: `xz8_spider_architecture_report.md`
+
+### crawler_development_docs
+General documentation and guides for crawler development.
+- **Docs**: `crontab_setup_guide.md`, `quick_start_guide.md`, `cuevana3_movie_spider_usage.md`, `cuevana3_spider_system.md`
 
 ## Usage
 
